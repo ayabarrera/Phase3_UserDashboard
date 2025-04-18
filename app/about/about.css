@@ -1,0 +1,161 @@
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 180px 100px;
+  color: #111;
+}
+
+.about-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 350px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+
+.team-section {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.team-divider {
+  width: 100px;
+  height: 3px;
+  background-color: #0f0f0f;
+  margin: 0 auto 60px;
+  border-radius: 4px;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+
+.team-member {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 250px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  margin: 10px 0 4px;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.team-member p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.about-page-bg {
+  background-color: #fdf6ee;
+  min-height: 100vh;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    padding: 100px 30px;
+  }
+
+  .about-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 600px;
+  }
+
+  .about-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .team-grid {
+    gap: 30px;
+  }
+
+  .team-member {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-container {
+    padding: 80px 20px;
+  }
+
+  .about-text h1 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .team-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 100%;
+    max-width: 300px;
+  }
+}

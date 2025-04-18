@@ -1,0 +1,89 @@
+/* Main Container */
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 95%;
+  margin: 40px auto;
+  font-family: 'Times New Roman', Times, serif; 
+  background-color: #e6dcce;
+  color: #333;
+  height: 100vh;
+  border-radius: 10px;
+}
+
+.contentContainer h1 {
+  font-size: 46px;
+}
+
+.postSection {
+  background: #f6f1e7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+.postSection h2 {
+  border-bottom: 3px solid rgb(86, 85, 85);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 2.2rem;
+}
+
+.postSection ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.postSection li {
+  padding: 10px 0;
+  border-bottom: 1px dashed #aaa;
+}
+
+.postSection li h3 {
+  font-size: 1.5rem;
+}
+
+/* Blog Posts Section */
+.blogpostsSection {
+  padding: 20px;
+  margin-top: 30px;
+  background: #f6f1e7;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+}
+
+.blogpostsSection h2 {
+  font-size: 2.2rem;
+  border-bottom: 3px solid black;
+  padding-bottom: 5px;
+}
+
+.blogpostsSection h3 {
+  font-size: 1.5rem;
+  padding-top: 24px;
+}
+
+.blogpostsSection p {
+  font-size: 18px;
+  line-height: 1.6; 
+  color: #333; 
+}
+
+.blogpostsSection h4 {
+  line-height: 1.6; 
+  color: #686868; 
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content-container {
+    width: 100%;
+    padding: 15px;
+  }
+}

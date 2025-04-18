@@ -1,0 +1,125 @@
+/* This is our general page layout*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.archives-page {
+  font-size: 14px;
+  color: #2f2f2f;
+  padding: 20px;
+  background-color: #f4ece2;
+}
+
+.archives-page header {
+  font-family: "DM Serif Display", serif;
+  font-weight: 900;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 72px;
+  padding: 12px 0;
+  margin-bottom: 20px;
+}
+
+.archives-page p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.archives-page .subhead {
+  border-bottom: 2px solid #2f2f2f;
+  border-top: 2px solid #2f2f2f;
+  padding: 12px 0;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Main content layout - houses the 3 columns */
+.archives-page .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.archives-page .column {
+  font-size: 14px;
+  line-height: 20px;
+  width: 30%;
+  padding: 10px;
+  border-left: 1px solid #2f2f2f;
+}
+
+.archives-page .column:first-child {
+  border-left: none;
+}
+
+.archives-page .headline {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 32px;
+}
+
+/* Styling for the image and figcaption */
+.image-figure { /* This is our container for the image and its caption */
+  float: left; 
+  margin-right: 15px; 
+  text-align: center; 
+  width: auto; 
+  max-width: 60%; 
+}
+
+.article-image {
+  width: 100%; 
+  height: auto;
+  display: block; 
+}
+
+.image-caption {
+  font-size: 10px;
+  color: #555;
+  font-style: italic;
+  margin-top: 5px;
+  text-align: left;
+  display: block;
+  max-width: 100%;
+}
+
+
+@media (max-width: 1200px) {
+  .archives-page .column {
+    width: 47%;
+  }
+}
+
+@media (max-width: 900px) {
+  .archives-page .column {
+    width: 100%;
+    border-left: none;
+    border-bottom: 1px solid #2f2f2f;
+    padding-bottom: 20px;
+  }
+
+  .archives-page header {
+    font-size: 30px;
+    line-height: 54px;
+  }
+
+  .image-figure {
+    float: none; 
+    text-align: center;
+    margin: 0 auto 15px;
+  }
+
+  .article-image {
+    float: none;
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  .image-caption {
+    text-align: center;
+  }
+}

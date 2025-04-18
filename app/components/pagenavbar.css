@@ -1,0 +1,85 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  position: relative; 
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.signup-link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  color: #6587f6;
+  text-decoration: underline;
+}
+
+.link.active {
+  font-weight: bold;
+  color: #6587f6;
+  font-style: italic;
+}
+
+.burger-menu {
+  display: none; 
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .burger-menu {
+    display: block;
+  }
+
+  /* Hide links by default on small screens */
+  .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background:black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1050;
+  }
+
+  .links.open {
+    display: flex;
+    width: 150px;
+  }
+
+  .link {
+    padding: 10px 0;
+    display: block;
+  }
+}
