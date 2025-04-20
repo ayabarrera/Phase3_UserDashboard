@@ -9,6 +9,7 @@ This project focuses on styling the User Dashboard and adding API that goes well
 - install dependencies (npm install)
 - install directus/sdk (npm install @directus/sdk)
 - install prop-types used in navbar (npm install prop-types)
+- install charts.js and React charts.js 2 (npm install chart.js react-chartjs-2)
 - You will need a .env.local file for this project to run
 - npm run dev (The app should now be running at http://localhost:3000)
 
