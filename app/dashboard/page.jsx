@@ -1,18 +1,37 @@
-import BlogPosts from '../components/BlogPost';
+import styles from './dashboard.module.css';
+import Image from 'next/image';
 import { getUserData } from '@/lib/dal';
 import client from '@/lib/directus';
 import { readItems } from '@directus/sdk';
-import styles from './dashboard.module.css';
+import BlogPosts from '../components/BlogPost';
+import DailyQuote from '../components/DailyQuote';
 
 export default async function Dashboard() {
   const response = await getUserData();
   const posts = await client.request(readItems('posts'));
+  const user = response?.user;
 
   return (
-    <main className={styles.contentContainer}>
-      <h1>Hello, {response?.user?.first_name || 'User'}</h1>
+    <div className={styles.container}>
 
-      <section className={styles.postSection}>
+      <aside className={styles.sidebar}>
+        <div className={styles.userInfo}>
+          <Image src="/bear.png" width={72} height={72} alt="User" />
+          <h3>{user?.first_name || 'User'}</h3>
+        </div>
+      </aside>
+
+      <main className={styles.contentArea}>
+        <div className={styles.header}>
+          <h1>Hello, {user?.first_name || 'User'}</h1>
+          <button className={styles.addButton}>+ Add New Post</button>
+        </div>
+
+        <div className={styles.cardsGrid}>
+          <DailyQuote />
+        </div>
+
+        <section className={styles.postSection}>
         <h2>Your Posts</h2>
         {posts.length > 0 ? (
           <ul>
@@ -30,6 +49,12 @@ export default async function Dashboard() {
       <section className={styles.blogpostsSection}>
         <BlogPosts />
       </section>
-    </main>
+      </main>
+
+      {/* Right Sidebar for API*/}
+      <aside className={styles.rightSidebar}>
+        <h2>API TITLE & API HERE</h2>
+      </aside>
+    </div>
   );
 }
