@@ -20,6 +20,7 @@ This project focuses on styling the User Dashboard and adding API that goes well
       -[] Middle for main components
       -[] Right side for API implementation
 - [] Add daily quotes api for main dashboard.
+- [] Optimized for different screen sizes.
 
 
 ## Debugging Notes
