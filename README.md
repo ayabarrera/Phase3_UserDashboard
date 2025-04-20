@@ -29,7 +29,7 @@ This project focuses on styling the User Dashboard and adding API that goes well
 
 ## DELEGATION OF WORK
 - [Alyanna] - change the layout of the dashboard
-- [Marshall] - 
+- [Marshall] - Implement Charts.js for user statistics
 - [Jahswill] - 
 
 ## RESOURCES
