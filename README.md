@@ -41,4 +41,5 @@ This project focuses on styling the User Dashboard and adding API that goes well
 - [PropTypes](https://nextjs.org/learn/react-foundations/displaying-data-with-props)
 - [Passing Props](https://react.dev/learn/passing-props-to-a-component)
 - [Understanding Regular Expression - Regex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions)  
--[ZenQuote API Documentation](https://docs.zenquotes.io/zenquotes-documentation/)
+- [ZenQuote API Documentation](https://docs.zenquotes.io/zenquotes-documentation/)
+- [React Charts](https://react-chartjs-2.js.org/)
