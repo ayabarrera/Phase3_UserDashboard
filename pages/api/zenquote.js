@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
     try {
-      const zenRes = await fetch('https://zenquotes.io/api/random/');
+      const zenRes = await fetch('https://zenquotes.io/api/today/');
       const data = await zenRes.json();
   
       res.status(200).json(data);
