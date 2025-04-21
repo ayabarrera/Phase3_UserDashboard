@@ -6,6 +6,7 @@ import { readItems } from "@directus/sdk";
 import BlogPosts from "../components/BlogPost";
 import DailyQuote from "../components/DailyQuote";
 import BlogStatsSidebar from "../components/BlogStatsSidebar";
+import BoredBox from "../components/BoredBox";
 
 export default async function Dashboard() {
   const response = await getUserData();
@@ -25,6 +26,10 @@ export default async function Dashboard() {
         <div className={styles.userInfo}>
           <Image src="/bear.png" width={72} height={72} alt="User" />
           <h3>{user?.first_name || "User"}</h3>
+        </div>
+
+        <div className={styles.boredWidget}>
+        <BoredBox />
         </div>
       </aside>
 
