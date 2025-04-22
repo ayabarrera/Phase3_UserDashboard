@@ -8,7 +8,7 @@ export default function BoredActivity() {
   const getActivity = async () => {
     setLoading(true);
     try {
-      const res = await fetch("https://www.boredapi.com/api/activity");
+      const res = await fetch("/api/bored");
       const data = await res.json();
       setActivity(data.activity);
     } catch (err) {
@@ -20,12 +20,12 @@ export default function BoredActivity() {
 
   return (
     <div className="p-4 text-center">
-      <h2 className="text-2xl font-bold mb-4">Feeling Bored?</h2>
+      <h2 className="text-2xl font-bold mb-4">Want to learn a random fact?</h2>
       <button
         onClick={getActivity}
         className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
       >
-        Get a random activity
+        Get fact
       </button>
 
       {loading && <p className="mt-4">Loading something fun...</p>}
