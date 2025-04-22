@@ -31,7 +31,7 @@ This project focuses on styling the User Dashboard and adding API that goes well
 ## DELEGATION OF WORK
 - [Alyanna] - change the layout of the dashboard
 - [Marshall] - Implement Charts.js for user statistics
-- [Jahswill] - 
+- [Jahswill] - Random quotes api
 
 ## RESOURCES
 - [Deploy Directus on Render.com](https://blog.jamin.sh/how-to-deploy-directus-to-rendercom)
