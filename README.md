@@ -3,7 +3,7 @@
 This project focuses on styling the User Dashboard and adding API that goes well with the website.
 
 🚀 Live Demo
-- [Phase 3]()
+- [Phase 3](https://pen-and-pixel.vercel.app/)
 
 ## TO INSTALL
 - install dependencies (npm install)
@@ -14,19 +14,14 @@ This project focuses on styling the User Dashboard and adding API that goes well
 - npm run dev (The app should now be running at http://localhost:3000)
 
 ## GOALS
-- [] Code optimization
-  - [] CSS Refactoring: Ensure styles do not conflict (organized into separate files if necessary)
-- [] Layout updates
-      -[] Left side for user picture and name
-      -[] Middle for main components
-      -[] Right side for API implementation
-- [] Add daily quotes api for main dashboard.
-- [] Optimized for different screen sizes.
-
-
-## Debugging Notes
-✅ Fixed Issues:
-
+- [DONE] Code optimization
+  - [DONE] CSS Refactoring: Ensure styles do not conflict (organized into separate files if necessary)
+- [DONE] Layout updates
+      -[DONE] Left side for user picture and name
+      -[DONE] Middle for main components
+      -[DONE] Right side for API implementation
+- [DONE] Add daily quotes api for main dashboard.
+- [DONE] Optimized for different screen sizes.
 
 ## DELEGATION OF WORK
 - [Alyanna] - change the layout of the dashboard
