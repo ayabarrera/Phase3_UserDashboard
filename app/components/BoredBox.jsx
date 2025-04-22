@@ -8,11 +8,11 @@ export default function BoredActivity() {
   const getActivity = async () => {
     setLoading(true);
     try {
-      const res = await fetch("/api/bored");
+      const res = await fetch("https://uselessfacts.jsph.pl/api/v2/facts/random?language=en");
       const data = await res.json();
-      setActivity(data.activity);
+      setActivity(data.text); // 'text' contains the random fact
     } catch (err) {
-      setActivity("Oops, couldn't fetch anything fun 😅");
+      setActivity("Oops, couldn't fetch a fact 😅");
     } finally {
       setLoading(false);
     }
@@ -20,7 +20,7 @@ export default function BoredActivity() {
 
   return (
     <div className="p-4 text-center">
-      <h2 className="text-2xl font-bold mb-4">Want to learn a random fact?</h2>
+      <h2 className="text-2xl font-bold mb-8">Want to learn a random fact?</h2>
       <button
         onClick={getActivity}
         className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
